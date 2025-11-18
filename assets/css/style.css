@@ -1,0 +1,107 @@
+/* ======== ESTILO GERAL ======== */
+body {
+    font-family: Arial;
+    background: rgb(199, 199, 199);
+    margin: 0;
+    padding: 0;
+}
+
+/* ======== TÍTULOS ======== */
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+/* ======== FORMULÁRIO DE CADASTRO ======== */
+form {
+    width: 350px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 18px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005bcc;
+}
+
+form a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* ======== PÁGINA MAIN ======== */
+
+.topo {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo button {
+    padding: 10px 15px;
+    background: #28a745;
+}
+
+.topo button:hover {
+    background: #1c7c32;
+}
+
+.card {
+    width: 90%;
+    background: white;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card b {
+    font-size: 18px;
+}
+
+.botoes {
+    margin-top: 10px;
+}
+
+.botoes a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.botoes .delete {
+    color: red;
+}
+
+.botoes a:hover {
+    text-decoration: underline;
+}
