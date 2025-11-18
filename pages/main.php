@@ -11,13 +11,17 @@ $result = $connect->query($sql);
 <head>
     <meta charset="UTF-8">
     <title>Contatos</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
 <div class="topo">
     <h2>Lista de Contatos</h2>
+    <form action="../includes/pesquisarPorNome.php">
+    <input type="text" name="nome">
+    </form>
     <a href="cadastro.html">
-        <button>Novo Contato</button>
+        <button class="botaoNovoContato">Novo Contato</button>
     </a>
 </div>
 
@@ -37,6 +41,5 @@ $result = $connect->query($sql);
         </div>
     </div>
 <?php endwhile; ?>
-
 </body>
 </html>

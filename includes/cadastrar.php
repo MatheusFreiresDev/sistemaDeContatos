@@ -20,7 +20,7 @@ if($_POST) {
     // aqui ele verifica se tem coneção, se tiver ele faz a querry
     if($connect->query($sql) === TRUE) {
         echo "<p>Contato cadastrado</p>";
-        echo "<a href='../pages/cadastro.html'><button type='button'>Voltar</button></a>";
+        echo "<a href='../pages/main.php'><button type='button'>Voltar</button></a>";
     } else {
         echo "Erro: " . $sql . " " . $connect->connect_error;
     }
