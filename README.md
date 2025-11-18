@@ -1,22 +1,19 @@
-Sistema de Contatos
+# Sistema de Contatos
 
-Este projeto é o Sistema de Contatos, desenvolvido como atividade acadêmica, com o objetivo de praticar construção de interfaces simples, manipulação de dados e organização de projeto.
+Este projeto é o **Sistema de Contatos**, desenvolvido como atividade acadêmica, com o objetivo de praticar construção de interfaces simples, manipulação de dados e organização de projeto.
 
-📝 Visão Geral
+## 📝 Visão Geral
 
 O sistema permite:
 
-Cadastrar contatos
+- Cadastrar contatos  
+- Editar contatos  
+- Remover contatos  
+- Listar todos os contatos cadastrados  
 
-Editar contatos
+A interface utiliza HTML, CSS e JavaScript, e o banco de dados pode ser criado a partir do arquivo `script.sql` incluído no projeto.
 
-Remover contatos
-
-Listar todos os contatos cadastrados
-
-A interface utiliza HTML, CSS e JavaScript, e o banco de dados pode ser criado a partir do arquivo script.sql incluído no projeto.
-
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
 /
 ├── assets/ # CSS, imagens e recursos estáticos
@@ -25,37 +22,33 @@ A interface utiliza HTML, CSS e JavaScript, e o banco de dados pode ser criado a
 ├── script.sql # Script de criação do banco de dados
 └── README.md # Documentação do projeto
 
-🛠 Tecnologias Utilizadas
+## 🛠 Tecnologias Utilizadas
 
-HTML5
+- HTML5  
+- CSS3  
+- JavaScript (vanilla)  
+- SQL para armazenamento  
+- Git/GitHub para versionamento  
 
-CSS3
+## 🚀 Como Executar
 
-JavaScript (vanilla)
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/MatheusFreiresDev/sistemaDeContatos.git
+Importe o script.sql no seu SGBD para criar a tabela de contatos.
 
-SQL para armazenamento
+Abra o projeto em um servidor local ou execute os arquivos HTML diretamente no navegador (idealmente usando um servidor).
 
-Git/GitHub para versionamento
-
-🚀 Como Executar
-
-Clone o repositório:
-git clone https://github.com/MatheusFreiresDev/sistemaDeContatos.git
-
-Importe o arquivo script.sql no seu banco.
-
-Abra o projeto num servidor local (ou diretamente no navegador).
-
-Use normalmente a interface para cadastrar, editar e excluir contatos.
+Acesse a página principal e utilize o sistema de cadastro normalmente.
 
 🎯 Funcionalidades
 
 Adicionar novo contato
 
-Editar contato existente
+Editar informações de um contato
 
 Excluir contato
 
-Visualizar lista de contatos
+Visualização rápida dos contatos
 
-Layout simples e intuitivo
+Layout simples e direto
