@@ -15,7 +15,6 @@ A interface utiliza HTML, CSS e JavaScript, e o banco de dados pode ser criado a
 
 ## 📂 Estrutura do Projeto
 
-/
 ├── assets/ # CSS, imagens e recursos estáticos
 ├── includes/ # Componentes reutilizáveis (header, footer, etc.)
 ├── pages/ # Páginas principais do sistema
