@@ -1,107 +1,280 @@
-/* ======== ESTILO GERAL ======== */
-body {
-    font-family: Arial;
-    background: rgb(199, 199, 199);
+/*
+|--------------------------------------------------------------------------
+| Reset Básico e Fontes
+|--------------------------------------------------------------------------
+*/
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ======== TÍTULOS ======== */
-h2 {
-    text-align: center;
-    margin-top: 30px;
+body {
+    background-color: #f4f7f6; /* Fundo cinza claro */
     color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-/* ======== FORMULÁRIO DE CADASTRO ======== */
+/*
+|--------------------------------------------------------------------------
+| Estilos de Cabeçalhos e Navegação
+|--------------------------------------------------------------------------
+*/
+h2 {
+    color: #007bff; /* Azul primário */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+nav {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Estilos de Formulário (Cadastro e Edição)
+|--------------------------------------------------------------------------
+*/
 form {
-    width: 350px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
 }
 
 label {
-    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
 }
 
-input {
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #bbb;
-    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
 }
 
-button {
-    padding: 10px 18px;
-    background: #007bff;
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #28a745; /* Verde para salvar */
+    color: white;
+    padding: 10px 15px;
     border: none;
-    color: #fff;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
 }
 
-button:hover {
-    background: #005bcc;
+button[type="submit"]:hover {
+    background-color: #218838;
 }
 
+/* Estilo para o link de "Voltar à lista" */
 form a {
-    margin-left: 10px;
+    color: #6c757d;
     text-decoration: none;
-    color: #333;
+    padding: 10px 0;
+    display: inline-block;
+    transition: color 0.3s;
 }
 
-/* ======== PÁGINA MAIN ======== */
+form a:hover {
+    color: #495057;
+}
 
+/*
+|--------------------------------------------------------------------------
+| Estilos da Lista de Contatos (main.php)
+|--------------------------------------------------------------------------
+*/
+
+/* Topo e Pesquisa */
 .topo {
-    width: 90%;
-    margin: 20px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Garante que elementos se quebrem em telas menores */
 }
 
-.topo button {
+.topo form {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+    max-width: none;
+}
+
+.topo input[type="text"] {
+    width: 250px;
+    margin-bottom: 0;
+}
+
+.botaoNovoContato {
+    background-color: #007bff;
+    color: white;
     padding: 10px 15px;
-    background: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
-.topo button:hover {
-    background: #1c7c32;
+.botaoNovoContato:hover {
+    background-color: #0056b3;
 }
 
+/* Cards de Contato */
 .card {
-    width: 90%;
-    background: white;
-    margin: 15px auto;
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    border-left: 5px solid #007bff; /* Detalhe lateral */
+    transition: transform 0.2s;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card:hover {
+    transform: translateY(-2px); /* Efeito sutil ao passar o mouse */
 }
 
 .card b {
-    font-size: 18px;
+    color: #007bff;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
 }
 
+/* Botões dentro do Card */
 .botoes {
     margin-top: 10px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    display: flex;
+    gap: 15px;
 }
 
 .botoes a {
-    margin-right: 15px;
     text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.botoes a:first-child { /* Editar */
+    background-color: #ffc107; /* Amarelo */
+    color: #212529;
+}
+
+.botoes a:first-child:hover {
+    background-color: #e0a800;
+}
+
+.botoes a.delete { /* Excluir */
+    background-color: #dc3545; /* Vermelho */
+    color: white;
+}
+
+.botoes a.delete:hover {
+    background-color: #c82333;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Mensagens de Status (Sucesso/Erro)
+|--------------------------------------------------------------------------
+*/
+p {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
     font-weight: bold;
-    color: #007bff;
+    max-width: 500px;
+    margin: 15px auto;
+    text-align: center;
 }
 
-.botoes .delete {
-    color: red;
+p:first-child { /* Aplicado ao sucesso */
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
 }
 
-.botoes a:hover {
-    text-decoration: underline;
+p:nth-child(2) { /* Aplicado ao erro */
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Responsividade
+|--------------------------------------------------------------------------
+*/
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .topo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topo form {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .topo input[type="text"] {
+        width: 100%;
+    }
+
+    .botaoNovoContato {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
