@@ -1,1 +1,0 @@
-trabalho rocheda da tropa
