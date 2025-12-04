@@ -1,7 +1,7 @@
 <?php
 
 // Inclui o arquivo de conexão
-require_once '../includes/db_conection.php';
+require_once 'db_conection.php';
 
 // Garante que o método seja POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
