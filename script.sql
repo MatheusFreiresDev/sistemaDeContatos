@@ -21,4 +21,4 @@
         password VARCHAR(255) NOT NULL,
         email VARCHAR(100) UNIQUE,
         data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    );
+    );
