@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 // Inclui o arquivo de conexão
 require_once 'db_conection.php';
 
@@ -27,11 +29,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit();
             
         } else {
-            echo "❌ Senha incorreta. <a href='../pages/login.html'>Tente novamente</a>.";
+            echo "❌ Senha incorreta. <a href='../pages/login.php'>Tente novamente</a>.";
         }
         
     } else {
-        echo "❌ Usuário não encontrado. <a href='../pages/login.html'>Tente novamente</a>.";
+        echo "❌ Usuário não encontrado. <a href='../pages/login.php'>Tente novamente</a>.";
     }
 
     $stmt->close();

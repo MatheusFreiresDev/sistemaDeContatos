@@ -1,5 +1,8 @@
 <?php
+session_start();
 
-// Inclui o arquivo de conexão
-
+if(!isset($_SESSION['user_id'])) {
+    header("Location: ../pages/login.php");
+    exit();
+}
 ?>

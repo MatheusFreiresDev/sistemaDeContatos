@@ -1,4 +1,5 @@
 <?php
+require_once '../includes/protecao_login.php'; // proteção do login
 require_once '../includes/db_conection.php'; // importa o arquivo de conexão com o banco
 
 // Puxa todos contatos

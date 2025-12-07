@@ -1,3 +1,7 @@
+<?php
+require_once "../includes/protecao_login.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
