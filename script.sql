@@ -1,9 +1,5 @@
--- Criar banco e usuário MySQL
+-- Criar banco
 CREATE DATABASE IF NOT EXISTS contatos_db;
-CREATE USER IF NOT EXISTS 'contatos_user'@'localhost' IDENTIFIED BY 'senha123';
-GRANT ALL PRIVILEGES ON contatos_db.* TO 'contatos_user'@'localhost';
-FLUSH PRIVILEGES;
-
 -- Usar o banco
 USE contatos_db;
 
