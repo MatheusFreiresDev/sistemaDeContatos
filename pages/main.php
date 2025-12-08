@@ -23,7 +23,7 @@ $result = $connect->query($sql); // executa a query no banco
         <input type="text" name="nome"> <!-- campo de busca por nome -->
     </form>
 
-    <a href="cadastro.html"> <!-- botão pra ir pro cadastro -->
+    <a href="cadastro.php"> <!-- botão pra ir pro cadastro -->
         <button class="botaoNovoContato">Novo Contato</button>
     </a>
 </div>
